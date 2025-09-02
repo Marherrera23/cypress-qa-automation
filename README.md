@@ -22,4 +22,7 @@ Este repositorio contiene pruebas automatizadas con Cypress para validar flujos 
 3. Ejecuta Cypress  
    `npx cypress open`
 
-## 📁 Estructura del proyecto
+## ✨ Autor
+
+María Herrera — QA funcional.  
+[LinkedIn](https://www.linkedin.com/in/tuusuario) | [Portafolio](https://github.com/Marherene23)

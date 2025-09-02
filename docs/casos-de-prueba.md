@@ -3,10 +3,9 @@
 Este conjunto de pruebas automatiza el flujo de login en [the-internet.herokuapp.com/login](https://the-internet.herokuapp.com/login), validando distintos escenarios funcionales.
 
 ---
+```gherkin
 
 ## ✅ Escenario 1: Login exitoso
-
-```gherkin
 Feature: Login funcional
 
   Scenario: Usuario accede correctamente

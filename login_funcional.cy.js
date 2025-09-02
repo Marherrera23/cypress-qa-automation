@@ -60,5 +60,23 @@ describe('login funcional', () => {
     .and('have.class', 'flash error');
 });
 
+it('Validar login fallido con credenciales incorrectas', () => {
+  cy.log('Ingresar usuario incorrecto');
+  cy.get('#username').type('usuarioIncorrecto');
+
+  cy.log('Ingresar contraseña incorrecta');
+  cy.get('#password').type('claveIncorrecta');
+
+  cy.log('Enviar formulario');
+  cy.get('#login').submit();
+
+  cy.log('Validar que no se redirige');
+  cy.url().should('include', '/login');
+
+  cy.log('Validar mensaje de error');
+  cy.get('#flash')
+    .should('contain.text', 'Your username is invalid!')
+    .and('have.class', 'flash error');
 });
 
+});
